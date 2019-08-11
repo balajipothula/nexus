@@ -11,4 +11,6 @@ mv      $HOME/root/sonatype-work $HOME/root/.artifactory                        
 find    $HOME/root/.nexusoss2     -maxdepth 1 -name "*.txt" -type f -delete                              && \
 find    $HOME/root/.nexusoss2/bin -maxdepth 1 -name "*.bat" -type f -delete                              && \
 find    $HOME/root/.artifactory   -maxdepth 1 -name "*.txt" -type f -delete                              && \
-rm -rf  $HOME/root/.nexusoss2/bin/jsw/{license,linux-ppc*,linux-x86-32,macosx*,solaris*,windows*}  
+rm -rf  $HOME/root/.nexusoss2/bin/jsw/{license,linux-ppc*,linux-x86-32,macosx*,solaris*,windows*}        && \
+sed -i 's/sonatype-work/.artifactory/g' $HOME/root/.nexusoss2/conf/nexus.properties                      && \
+sh      $HOME/root/.nexusoss2/bin/nexus start
