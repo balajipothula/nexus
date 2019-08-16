@@ -1,5 +1,13 @@
+#!/bin/bash
+
+# Author      : BALAJI POTHULA <balaji.pothula@techie.com>,
+# Date        : 31 August 2016,
+# Description : Installing nexus on rhel.
+
+# updating rhel packages.
 sudo yum -y update
 
+# installing openjdk8.
 sudo yum -y install java-1.8.0-openjdk
 
 mkdir root                                                                                               && \
