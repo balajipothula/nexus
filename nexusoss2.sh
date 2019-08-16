@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Author      : BALAJI POTHULA <balaji.pothula@techie.com>,
-# Date        : 31 August 2016,
+# Date        : 16 August 2019,
 # Description : Installing nexus on rhel.
 
 # updating rhel packages.
